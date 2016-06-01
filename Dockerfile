@@ -23,13 +23,13 @@ RUN tar -xjvf slimerjs-0.9.6-linux-x86_64.tar.bz2
 RUN mv slimerjs-0.9.6 /opt/
 RUN ln -sf /opt/slimerjs-0.9.6/slimerjs /usr/local/bin/slimerjs
 
-# a) install firefox
+# b) install firefox
 RUN wget ftp.mozilla.org/pub/firefox/releases/36.0.4/linux-x86_64/en-US/firefox-36.0.4.tar.bz2
 RUN tar -xjvf firefox-36.0.4.tar.bz2
 RUN mv firefox /opt/firefox-36.0.4
 RUN ln -sf /opt/firefox-36.0.4/firefox /usr/bin/firefox
 
-# b) install xvfb - X Virtual FrameBuffer
+# c) install xvfb - X Virtual FrameBuffer
 RUN apt-get install xvfb
 RUN apt-get install xfonts-100dpi xfonts-75dpi xfonts-cyrillic xorg dbus-x11
 
